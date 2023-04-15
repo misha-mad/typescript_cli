@@ -1,16 +1,16 @@
 {
   "name": "type-script-course",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "education course for mad, CLI tool for managing a catalog of products",
   "author": {
     "email": "michael.zacharov@ottofeller.com",
-    "name": "misha-front"
+    "name": "Misha-Otto"
   },
-  "homepage": "https://github.com/ottofeller/AdvancedTypeScript#readme",
+  "homepage": "https://github.com/misha-mad/typescript_cli#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ottofeller/AdvancedTypeScript"
+    "url": "https://github.com/misha-mad/typescript_cli"
   },
   "bin": {
     "catalog": "dist/index.js"
