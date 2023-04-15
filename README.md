@@ -18,7 +18,7 @@ All the operations over the catalog will be performed using Ink — React-based 
 | `catalog product delete` | Deletes a product item                                                      |
 
 ## Flags
-| Nmae       | Description |
+| Name       | Description |
 |------------|-------------|
 | parentId   |             |
 | name       |             |
