@@ -20,19 +20,6 @@ enum Commands {
 }
 
 const cli = meow('This is a product catalog software ©', {
-  autoHelp: false,
-  autoVersion: false,
-  allowUnknownFlags: false,
-  argv: [],
-  booleanDefault: undefined,
-  description: undefined,
-  hardRejection: false,
-  help: undefined,
-  importMeta: import.meta,
-  inferType: false,
-  pkg: undefined,
-  version: undefined,
-
   flags: {
     help: {alias: 'h', type: 'boolean'},
     version: {alias: 'v', type: 'boolean'},

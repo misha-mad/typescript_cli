@@ -1,8 +1,8 @@
-import {AccessoryProduct} from './accessory-product'
-import {ClothingProduct} from './clothing-product'
-import {Color} from './color'
-import {ProductParams} from './product-params'
-import {Size} from './size'
+import {AccessoryProduct} from './accessory-product.js'
+import {ClothingProduct} from './clothing-product.js'
+import {Color} from './color.js'
+import {ProductParams} from './product-params.js'
+import {Size} from './size.js'
 
 export namespace ProductNamespace {
   export type Product = AccessoryProduct | ClothingProduct

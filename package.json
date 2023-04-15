@@ -26,7 +26,7 @@
   "dependencies": {
     "ink": "3.2.0",
     "ink-table": "3.0.0",
-    "meow": "11.0.0",
+    "meow": "9.0.0",
     "react": "18.2.0",
     "sqlite": "4.1.2",
     "sqlite3": "5.0.3",
@@ -46,7 +46,8 @@
     "extends": [
       "@ottofeller/eslint-config-ofmt/eslint.formatting.cjs",
       "@ottofeller/eslint-config-ofmt/eslint.quality.cjs"
-    ]
+    ],
+    "ignorePatterns": ["dist/"]
   },
   "prettier": "@ottofeller/prettier-config-ofmt"
 }
