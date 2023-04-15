@@ -12,7 +12,7 @@ All the operations over the catalog will be performed using Ink — React-based 
 | `--version`              | Call of output the version from package.json.                               |
 | `catalog init`           | Initializing a database                                                     |
 | `catalog drop`           | Drops a database                                                            |
-| `catalog category add"`  | Adds a new product category                                                 |
+| `catalog category add`   | Adds a new product category                                                 |
 | `catalog product add`    | Adds a new product                                                          |
 | `catalog product edit`   | Edits a product item                                                        |
 | `catalog product delete` | Deletes a product item                                                      |

@@ -1,6 +1,6 @@
 import {Database} from 'sqlite'
 import {Database as Sqlite3Database, Statement} from 'sqlite3'
-import {ProductNamespace} from '../types'
+import {ProductNamespace} from 'types'
 import {throwIf} from './common/helpers'
 
 export const deleteProduct = async (params: {

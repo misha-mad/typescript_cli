@@ -1,8 +1,7 @@
+import {CategoryNamespace, ProductNamespace} from 'types'
 import {v4 as uuid} from 'uuid'
-import {CategoryNamespace, ProductNamespace} from '../types'
 import {throwIf} from './common/helpers'
 
-// eslint-disable-next-line complexity -- temporary turn off the complexity eslint rule
 export const addProduct = async (params: ProductNamespace.Params) => {
   let result: ProductNamespace.Product | null = null
   let category: CategoryNamespace.ImmutableCategoryType | undefined

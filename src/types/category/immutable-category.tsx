@@ -1,4 +1,4 @@
 import {Category} from 'types/category/category'
-import {ImmutableFields} from '../common/immutable-fields'
+import {ImmutableFields} from 'types'
 
 export type ImmutableCategory = ImmutableFields<Category, 'id' | 'categoryId'>

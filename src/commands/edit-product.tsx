@@ -1,7 +1,6 @@
-import {ProductNamespace} from '../types'
+import {ProductNamespace} from 'types'
 import {throwIf} from './common/helpers'
 
-// eslint-disable-next-line complexity -- temporary turn off the complexity eslint rule
 export const editProduct = async (params: {productId: string | undefined} & ProductNamespace.Params) => {
   let result: ProductNamespace.Product | null = null
   let product

@@ -22,6 +22,16 @@ enum Commands {
 const cli = meow('This is a product catalog software ©', {
   autoHelp: false,
   autoVersion: false,
+  allowUnknownFlags: false,
+  argv: [],
+  booleanDefault: undefined,
+  description: undefined,
+  hardRejection: false,
+  help: undefined,
+  importMeta: import.meta,
+  inferType: false,
+  pkg: undefined,
+  version: undefined,
 
   flags: {
     help: {alias: 'h', type: 'boolean'},
@@ -33,7 +43,7 @@ const cli = meow('This is a product catalog software ©', {
     categoryId: {alias: 'cid', type: 'string'},
     price: {alias: 'p', type: 'number'},
     productId: {alias: 'prid', type: 'string'},
-  },
+  }
 })
 
 type CategoryReturn = CategoryNamespace.GenericCategory<typeof cli.flags.parentId>
@@ -51,7 +61,6 @@ export const App = memo(() => {
     [],
   )
 
-  // eslint-disable-next-line complexity -- temporary fix
   const runCommand = useCallback(async () => {
     const database = await initDatabase()
     let result
