@@ -5,10 +5,25 @@ The catalog will be hosted on the local computer in SQLite DB, so there will be 
 All the operations over the catalog will be performed using Ink — React-based tool for building modern CLI interactions.
 
 ## Commands
-`--help`
+| Name                     | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `catalog`                | Main command                                                                |
+| `--help`                 | Call of the script output white text "This is a product catalog software ©" |
+| `--version`              | Call of output the version from package.json.                               |
+| `catalog init`           | Initializing a database                                                     |
+| `catalog drop`           | Drops a database                                                            |
+| `catalog category add"`  | Adds a new product category                                                 |
+| `catalog product add`    | Adds a new product                                                          |
+| `catalog product edit`   | Edits a product item                                                        |
+| `catalog product delete` | Deletes a product item                                                      |
 
-Call of the script output white text "This is a product catalog software ©"
-
-`--version` 
-
-Call of output the version from package.json.
+## Flags
+| Nmae       | Description |
+|------------|-------------|
+| parentId   |             |
+| name       |             |
+| color      |             |
+| size       |             |
+| categoryId |             |
+| price      |             |
+| productId  |             |
