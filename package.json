@@ -1,0 +1,54 @@
+{
+  "name": "type-script-course",
+  "version": "0.0.3",
+  "description": "education course for mad, CLI tool for managing a catalog of products",
+  "author": {
+    "email": "michael.zacharov@ottofeller.com",
+    "name": "misha-front"
+  },
+  "homepage": "https://github.com/ottofeller/AdvancedTypeScript#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottofeller/AdvancedTypeScript"
+  },
+  "bin": {
+    "catalog": "dist/index.js"
+  },
+  "scripts": {
+    "lint": "olint './src/**/*.tsx'  && ofmt --lint './src/**/*.tsx'",
+    "format": "ofmt './src/**/*.tsx'",
+    "build": "rm -rf ./dist/ && tsc --build",
+    "lint-fix": "eslint --fix --ext .ts,.tsx,.js,.jsx ./src",
+    "start": "node ./dist/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "ink": "3.2.0",
+    "ink-table": "3.0.0",
+    "meow": "9.0.0",
+    "react": "17.0.2",
+    "sqlite": "4.0.25",
+    "sqlite3": "5.0.3",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@ottofeller/eslint-config-ofmt": "1.4.2",
+    "@ottofeller/eslint-plugin-ottofeller": "0.1.3",
+    "@ottofeller/ofmt": "1.4.2",
+    "@ottofeller/prettier-config-ofmt": "1.4.2",
+    "@types/react": "17.0.41",
+    "@types/uuid": "8.3.4",
+    "eslint": "8.11.0",
+    "ts-node": "10.8.2",
+    "typescript": "4.5.5"
+  },
+  "eslintConfig": {
+    "extends": "@ottofeller/eslint-config-ofmt/eslint.quality.cjs",
+    "rules": {
+      "max-depth": "off",
+      "import/no-relative-parent-imports": "off"
+    }
+  },
+  "prettier": "@ottofeller/prettier-config-ofmt"
+}

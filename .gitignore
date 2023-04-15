@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Distribution / packaging
+dist/
+
+# Webstorm config
+.idea/
+
+# TypeScript config cash
+tsconfig.tsbuildinfo

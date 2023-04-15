@@ -1,0 +1,6 @@
+export {addCategory} from './add-category'
+export {addProduct} from './add-product'
+export {deleteProduct} from './delete-product'
+export {drop} from './drop'
+export {editProduct} from './edit-product'
+export {init} from './init'
